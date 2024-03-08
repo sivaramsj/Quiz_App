@@ -72,7 +72,7 @@ const Quiz = () => {
                 <button onClick={handleReset}>Reset</button>
             </div>
            :<>
-            <p>{index+1}. {question.question}</p>
+            <h1>{index+1}. {question.question}</h1>
             <ul>
                 <li ref={option1} onClick={(e)=>{checkAnswer(e,1)}}>{question.option1}</li>
                 <li ref={option2} onClick={(e)=>{checkAnswer(e,2)}}>{question.option2}</li>
